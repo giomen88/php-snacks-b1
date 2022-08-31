@@ -6,31 +6,29 @@
 $partite = [
     [
         'squadra_casa' => 'Virtus Bologna',
-        'punteggio_sc' => '78',
+        'punteggio_sc' => 78,
         'squadra_ospite' => 'Reyer Venezia',
-        'punteggio_so' => '57',
+        'punteggio_so' => 57,
     ],
     [
         'squadra_casa' => 'Juvecaserta',
-        'punteggio_sc' => '65',
+        'punteggio_sc' => 65,
         'squadra_ospite' => 'Virtus Roma',
-        'punteggio_so' => '81',
+        'punteggio_so' => 81,
     ],
     [
         'squadra_casa' => 'Auxilium Torino',
-        'punteggio_sc' => '48',
+        'punteggio_sc' => 48,
         'squadra_ospite' => 'Petrarca',
-        'punteggio_so' => '63',
+        'punteggio_so' => 63,
     ],
     [
         'squadra_casa' => 'Napoli Basket',
-        'punteggio_sc' => '90',
+        'punteggio_sc' => 90,
         'squadra_ospite' => 'Libertas Livorno',
-        'punteggio_so' => '75',
+        'punteggio_so' => 75,
     ],
 ];
-
-var_dump($partite);
 
 ?>
 
@@ -45,7 +43,7 @@ var_dump($partite);
 <body>
     <ul>
         <?php for($i = 0; $i < count($partite); $i++) : ?>
-            <li> <?= "$partite[$i]['squadra_casa'] - $partite[$i]['squadra_ospite'] | $partite[$i]['punteggio_sc'] - $partite[$i]['punteggio_so']" ?></li>
+            <li> <?= "{$partite[$i]['squadra_casa']} - {$partite[$i]['squadra_ospite']} | {$partite[$i]['punteggio_sc']} - {$partite[$i]['punteggio_so']}" ?></li>
         <?php endfor; ?>
     </ul>
 </body>
